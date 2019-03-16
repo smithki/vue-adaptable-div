@@ -1,5 +1,5 @@
 <template>
-<div></div>
+<div>Hello world</div>
 </template>
 
 <script lang="ts">
@@ -13,8 +13,7 @@ import { Component, Prop } from 'vue-property-decorator';
 
 @Component({
   name: 'AdaptableDiv',
-  inheritAttrs: false,
 })
-export class AdaptableDiv extends Vue {}
+export default class AdaptableDiv extends Vue {}
 </script>
 
