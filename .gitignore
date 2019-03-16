@@ -1,0 +1,9 @@
+node_modules/
+coverage/
+.nyc_output/
+npm-debug.log
+yarn-error.log
+src/**/*.js
+src/**/*.js.map
+dist/
+.vscode/
