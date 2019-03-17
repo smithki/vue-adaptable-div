@@ -1,12 +1,12 @@
 <template>
 <div
-  class="overflow-hidden"
   :style="{
     'max-height': !!viewHeight ? `${viewHeight}px` : undefined,
-    'transition-property': noTransition && 'max-height',
-    'transition-duration': noTransition && `${transitionDuration}ms`,
-    'transition-timing-funtion': noTransition && transitionTimingFunction,
-    'transition-delay': noTransition && `${transitionDelay}ms`,
+    'transition-property': noTransition ? undefined : 'max-height',
+    'transition-duration': noTransition ? undefined : `${transitionDuration}ms`,
+    'transition-timing-funtion': noTransition ? undefined : transitionTimingFunction,
+    'transition-delay': noTransition ? undefined : `${transitionDelay}ms`,
+    'overflow': 'hidden',
   }">
 
   <div ref="view">

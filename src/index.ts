@@ -1,1 +1,2 @@
-export * from './AdaptableDiv.vue';
+import AdaptableDiv from './AdaptableDiv.vue';
+export { AdaptableDiv };
