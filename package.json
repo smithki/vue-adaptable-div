@@ -1,12 +1,12 @@
 {
   "name": "vue-adaptable-div",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A Vue <div> component that transitionally adapts to the size of its children.",
   "author": "Ian K Smith <smithki707@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/smithki/vuex-ts.git"
+    "url": "git+https://github.com/smithki/vue-adaptable-div.git"
   },
   "files": [
     "dist/*",
@@ -15,7 +15,7 @@
     "*.json",
     "*.js"
   ],
-  "main": "dist/VueAdaptableDiv.umd.js",
+  "main": "dist/VueAdaptableDiv.common.js",
   "typings": "src/index.d.ts",
   "unpkg": "dist/VueAdaptableDiv.umd.js",
   "scripts": {
