@@ -1,6 +1,6 @@
 {
   "name": "vue-adaptable-div",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A Vue <div> component that transitionally adapts to the size of its children.",
   "author": "Ian K Smith <smithki707@gmail.com>",
   "license": "MIT",
