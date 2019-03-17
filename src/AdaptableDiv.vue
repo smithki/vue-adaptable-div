@@ -3,10 +3,10 @@
   class="overflow-hidden"
   :style="{
     'max-height': !!viewHeight ? `${viewHeight}px` : undefined,
-    'transition-property': 'max-height',
-    'transition-duration': `${transitionDuration}ms`,
-    'transition-timing-funtion': transitionTimingFunction,
-    'transition-delay': `${transitionDelay}ms`,
+    'transition-property': noTransition && 'max-height',
+    'transition-duration': noTransition && `${transitionDuration}ms`,
+    'transition-timing-funtion': noTransition && transitionTimingFunction,
+    'transition-delay': noTransition && `${transitionDelay}ms`,
   }">
 
   <div ref="view">
@@ -46,6 +46,9 @@ export default class AdaptableDiv extends Vue {
 
   @Prop({ type: Number, default: 0 })
   public transitionDelay!: number;
+
+  @Prop(Boolean)
+  public noTransition!: boolean;
 
   // --- Lifecycle --- //
 
