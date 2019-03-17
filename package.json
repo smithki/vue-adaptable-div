@@ -41,7 +41,6 @@
     "tslint": "^5.11.0",
     "typescript": "^3.0.3",
     "vue": "^2.6.9",
-    "vue-property-decorator": "^8.0.0",
     "vue-template-compiler": "^2.6.9",
     "vuetype": "^0.3.2"
   },
