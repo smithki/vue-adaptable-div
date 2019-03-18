@@ -33,7 +33,7 @@ In TypeScript or ES6+:
 import { AdaptableDiv } from 'vue-adaptable-div';
 ```
 
-In UMD (using `AdaptableDiv` via a `\<script\>` tag):
+In UMD (using `AdaptableDiv` via a `<script>` tag):
 
 ```js
 const AdaptableDiv = VueAdaptableDiv.AdaptableDiv;
