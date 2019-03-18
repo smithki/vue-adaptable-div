@@ -48,5 +48,5 @@ Vue.Component('adaptable-div', AdaptableDiv);
 | --- | --- | --- | --- |
 | `transitionDuration` | `Number` | `200` | Maps to the CSS property `transition-duration`. Units are in milliseconds. |
 | `transitionTimingFunction` | `String` | `"ease"` | Maps to the CSS property `transition-timing-function`. |
-| `transitionDelay` | `String` | `0` | Maps to the CSS property `transition-delay`. Units are in milliseconds. |
+| `transitionDelay` | `Number` | `0` | Maps to the CSS property `transition-delay`. Units are in milliseconds. |
 | `noTransition` | `Boolean` | `false` | If `true`, no CSS transition is applied to size changes. |
