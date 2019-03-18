@@ -3,11 +3,11 @@
 [![code style: airbnb](https://img.shields.io/badge/code%20style-airbnb-blue.svg?style=flat)](https://github.com/airbnb/javascript)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 
-> A Vue **\<div\>** component that transitionally adapts to the size of its children.
+> A Vue `<div>` component that transitionally adapts to the size of its children.
 
 ## 💁🏼‍♂️ Introduction
 
-`AdaptableDiv` is a straightforward Vue component that wraps child nodes in a `\<div\>` and watches them for size changes. The containing element is then sized to match with optional transitions! The core idea is to improve UX for use-cases where content dynamically updates or conditionally hides and shows—such as an [accordian](https://en.wikipedia.org/wiki/Accordion_(GUI)) menu.
+`AdaptableDiv` is a straightforward Vue component that wraps child nodes in a `<div>` and watches them for size changes. The containing element is then sized to match with optional transitions! The core idea is to improve UX for use-cases where content dynamically updates or conditionally hides and shows—such as an [accordian](https://en.wikipedia.org/wiki/Accordion_(GUI)) menu.
 
 ## 🔗 Installation
 
