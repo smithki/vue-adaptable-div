@@ -9,6 +9,8 @@
 
 `AdaptableDiv` is a straightforward Vue component that wraps child nodes in a `<div>` and watches them for size changes. The containing element is then sized to match with optional transitions! The core idea is to improve UX for use-cases where content dynamically updates or conditionally hides and shows—such as an [accordian](https://en.wikipedia.org/wiki/Accordion_(GUI)) menu.
 
+> Currently this module only detects and reacts to the _height_ of child nodes. The same behavior for _width_ is coming soon once I have time to troubleshoot a few edge cases related to responsiveness.
+
 ## 🔗 Installation
 
 Install via `yarn` (recommended):
