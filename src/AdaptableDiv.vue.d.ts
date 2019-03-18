@@ -7,8 +7,6 @@ export interface AdaptableDivData {
     viewWidth: number;
 }
 declare const _default: VueConstructor<AdaptableDivData & {
-    mounted(): void;
-    beforeDestroy(): void;
     watchViewElForResize(): Promise<void>;
     setDimensions(): void;
 } & {

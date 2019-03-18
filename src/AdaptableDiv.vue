@@ -50,22 +50,18 @@ export default Vue.extend({
     noTransition: Boolean,
   },
 
+  mounted() {
+    this.viewEl = this.$refs['view'] as HTMLDivElement;
+    this.setDimensions();
+    this.watchViewElForResize();
+  },
+
+  beforeDestroy() {
+    if (this.viewElResizeSubscription) this.viewElResizeSubscription.unsubscribe();
+    this.viewElResizeSubscription = null;
+  },
+
   methods: {
-    // --- Lifecycle --- //
-
-    mounted() {
-      this.viewEl = this.$refs['view'] as HTMLDivElement;
-      this.setDimensions();
-      this.watchViewElForResize();
-    },
-
-    beforeDestroy() {
-      if (this.viewElResizeSubscription) this.viewElResizeSubscription.unsubscribe();
-      this.viewElResizeSubscription = null;
-    },
-
-    // --- Business logic --- //
-
     async watchViewElForResize() {
       await this.$nextTick();
 
