@@ -67,7 +67,6 @@ export default Vue.extend({
 
       const resize$ = await watchResize(this.viewEl!);
       this.viewElResizeSubscription = resize$.subscribe(() => {
-        console.log('here');
         requestAnimationFrame(() => this.setDimensions());
       });
     },
