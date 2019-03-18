@@ -1,8 +1,8 @@
 <template>
 <div
   :style="{
-    'max-height': !!viewHeight ? `${viewHeight}px` : '100%',
-    'transition-property': noTransition ? undefined : 'max-height',
+    'height': !!viewHeight ? `${viewHeight}px` : '100%',
+    'transition-property': noTransition ? undefined : 'height',
     'transition-duration': noTransition ? undefined : `${transitionDuration}ms`,
     'transition-timing-funtion': noTransition ? undefined : transitionTimingFunction,
     'transition-delay': noTransition ? undefined : `${transitionDelay}ms`,
@@ -67,6 +67,7 @@ export default Vue.extend({
 
       const resize$ = await watchResize(this.viewEl!);
       this.viewElResizeSubscription = resize$.subscribe(() => {
+        console.log('here');
         requestAnimationFrame(() => this.setDimensions());
       });
     },
